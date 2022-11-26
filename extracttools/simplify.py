@@ -7,7 +7,7 @@ def extract_rising_edge_values(filepath_in, filepath_out):
     list_values = []
     prev_value = []
     prev_diff = 0
-    with open(filepath_in, newline='') as f:
+    with open(filepath_in, 'r') as f:
         with open(filepath_out, 'w') as f_out:
 
             reader = csv.reader(f)
